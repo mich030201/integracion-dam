@@ -12,6 +12,8 @@ Implementación del software. Programar las distintas partes que componen el sof
 
 Se deberá **cumplimentar el siguiente [documento](docs/desarrollo.md)** indicando todas las tecnologías (herramientas, lenguajes, ... ) que utilices para el desarrollo, así como incluir **el código fuente en un directorio con el nombre del proyecto en la raíz del repositorio**.
 
+El código fuente deberá encontrarse debidamente documentado.
+
 > TENER EN CUENTA QUE EL SOFTWARE SE DEBERÁ IMPLEMENTAR USANDO LAS MISMAS TECNOLOGÍAS UTILIZADAS EN LA EMPRESA, EN LA MEDIDA DE LO POSIBLE, SI ÉSTAS PERMITEN ABARCAR LOS REQUISITOS DEL PROYECTO.
 
 ### 3. Pruebas
