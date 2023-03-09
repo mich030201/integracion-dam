@@ -1,5 +1,9 @@
 # Anteproyecto
 
+> 
+> 
+> NOTA: Incluir diagramas donde proceda (diagramas de clases, casos de uso, entidad relación, ...).
+
 ## OBJETIVOS
 
 Se indicará de forma genérica y sin entrar en concreciones el objetivo
