@@ -1,29 +1,31 @@
 # Anteproyecto
 
-> 
-> 
 > NOTA: Incluir diagramas donde proceda (diagramas de clases, casos de uso, entidad relación, ...).
 
 ## OBJETIVOS
 
-Se indicará de forma genérica y sin entrar en concreciones el objetivo
+*[TODO] Se indicará de forma genérica y sin entrar en concreciones el objetivo
 que se pretende alcanzar al realizar el proyecto. Se indicará igualmente donde
-será utilizado el proyecto obtenido
+será utilizado el proyecto obtenido.*
 
 ## PREANALISIS DE LO EXISTENTE (Opcional)
 
-Si procede, se informará brevemente sobre el funcionamiento del sistema actual. El que vamos a reemplazar. Este sistema no tiene por qué estar necesariamente automatizado pudiendo realizarse actualmente de forma manual por personas.
+*[TODO] Si procede, se informará brevemente sobre el funcionamiento del sistema actual. El que vamos a reemplazar o a mejorar. Este sistema no tiene por qué estar necesariamente automatizado pudiendo realizarse actualmente de forma manual por personas.*
 
-## PREANÁLISIS DEL SISTEMA
+## ANÁLISIS DEL SOFTWARE
 
-Indicar con brevedad las partes del sistema sobre las que trabajaréis, identificando de forma genérica los requisitos que pretendéis satisfacer.
+*[TODO] Determinar de forma genérica lo que tiene que hacer el software y cuáles son los requisitos que debe cumplir.*
 
-Si el proyecto versa sobre la adaptación o ampliación de alguna herramienta software o hardware se deberá aportar información sobre la herramienta utilizada (documentos electrónicos, direcciones URL, etc.), delimitando claramente cuál será el trabajo que realizará el alumno y que funcionalidad ya está implementada (véase el apartado 7. Bibliografía)
+*Si el proyecto trata sobre la adaptación o ampliación de algún software existente, se deberá aportar información sobre el mismo (documentos electrónicos, direcciones URL, etc.), delimitando claramente cuál será el trabajo que se realizará y que funcionalidad ya está implementada.*
 
-## PREDISEÑO DEL SISTEMA
+> *Incuir los diagramas necesarios*
 
-Si el sistema precisa de nuevo material, hardware o software, indicar las características de este: dispositivos hardware, sistemas operativos, lenguajes, bases de datos, etc.
+## DISEÑO DEL SOFTWARE
+
+*[TODO] Propuesta de posibles opciones de implementación del software que hay que construir, determinar cómo se va a llevar a cabo la implementación.*
+
+>  *Incluir los diagramas necesarios.*
 
 ## ESTIMACIÓN DE COSTES
 
-Estimar el coste que representará la creación del proyecto para la empresa. Esta estimación será temporal y económica si procede.
+*[TODO] Estimar el coste que representará la creación del proyecto. Esta estimación será temporal y/o económica si procede (costes de contratación de servicios en la nube, por ejemplo).*
