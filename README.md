@@ -4,17 +4,17 @@ El proyecto de integración consiste en la implementación de un producto de sof
 
 Documentación necesaria para las distintas fases del desarrollo del proyecto de integración.
 
-- [Planificación](docs/planificacion)
+- [Planificación](docs/planificacion.md)
 
-- Análisis
+- [Análisis](docs/analisis.md)
 
-- Diseño
+- [Diseño](docs/diseño.md)
 
-- Desarrollo o implementación
+- [Desarrollo o implementación](docs/desarrollo.md)
 
-- Pruebas
+- [Pruebas](docs/pruebas.md)
 
-- Despliegue
+- [Despliegue](docs/despliegue.md)
 
 La documentación deberá redactarse en formato Markdown y deberá encontrarse en el directorio `docs` del repositorio.
 
