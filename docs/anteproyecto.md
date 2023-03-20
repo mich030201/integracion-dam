@@ -1,31 +1,30 @@
 # Anteproyecto
 
-> NOTA: Incluir diagramas donde proceda (diagramas de clases, casos de uso, entidad relación, ...).
 
 ## OBJETIVOS
 
-*[TODO] Se indicará de forma genérica y sin entrar en concreciones el objetivo
-que se pretende alcanzar al realizar el proyecto. Se indicará igualmente donde
-será utilizado el proyecto obtenido.*
+El proyecto se trata de una aplicación para móviles, con temática de fotografía, cuya pantalla principal se trata de un mapa donde el usuario podrá crear varios marcadores y ver los creados por otros usuarios así como puntuarlos. Los marcadores se harán en ubicaciones que el usuario conozca y que sea buena para hacer fotos. Este proyecto va dirigido a todo tipo de usuarios que deseen encontrar nuevos *spots* para realizar sesiones fotográficas.
 
-## PREANALISIS DE LO EXISTENTE (Opcional)
-
-*[TODO] Si procede, se informará brevemente sobre el funcionamiento del sistema actual. El que vamos a reemplazar o a mejorar. Este sistema no tiene por qué estar necesariamente automatizado pudiendo realizarse actualmente de forma manual por personas.*
 
 ## ANÁLISIS DEL SOFTWARE
 
-*[TODO] Determinar de forma genérica lo que tiene que hacer el software y cuáles son los requisitos que debe cumplir.*
+En la aplicación el usuario tendrá que crear una cuenta para poder realizar el resto de acciones. Una vez haya creado la cuenta, podrá crear un nuevo marcador y ver los marcadores creados por otros usuarios y evaluarlos. Al crear un marcador se mostrará un formulario donde se deben rellenar los datos del nuevo marcador (Nombre, coordenadas, fotos…). Una vez se haya creado otros usuarios podrán valorar este marcador, así como este usuario podrá valorar otros. Si en un futuro se podrá editar o eliminar el marcador si así lo desea. También se podrá dar la cuenta de baja.
+Por parte del administrador, este podrá realizar las mismas acciones que un usuario pero además tendrá otras acciones exclusivas de este rol, como crear, editar o eliminar otros usuarios, así como acceder a la base de datos de los usuarios y los punteros.
 
-*Si el proyecto trata sobre la adaptación o ampliación de algún software existente, se deberá aportar información sobre el mismo (documentos electrónicos, direcciones URL, etc.), delimitando claramente cuál será el trabajo que se realizará y que funcionalidad ya está implementada.*
+![usuario](https://user-images.githubusercontent.com/101225317/226205380-d72b4804-4147-4183-ab74-40e44b7648ce.jpg)
 
-> *Incuir los diagramas necesarios*
+![administrador](https://user-images.githubusercontent.com/101225317/226205389-51474937-c4df-40c7-9a72-b2f2d8e81c41.jpg)
+
 
 ## DISEÑO DEL SOFTWARE
 
-*[TODO] Propuesta de posibles opciones de implementación del software que hay que construir, determinar cómo se va a llevar a cabo la implementación.*
+El proyecto se desarrollará en Java y JavaScript. Se usará principalmente el AndrodiStudio, aunque también se usará VisualStudio. Dicho proyecto se desarrollará siguiendo el siguiente diagrama:
 
->  *Incluir los diagramas necesarios.*
+![nivel0](https://user-images.githubusercontent.com/101225317/226221035-d345a6c7-9411-4bb6-bf3f-50893ccb246d.jpg)
+
+![nivel1](https://user-images.githubusercontent.com/101225317/226221041-199a9217-7131-4279-869b-006e86240cf7.jpg)
+
 
 ## ESTIMACIÓN DE COSTES
 
-*[TODO] Estimar el coste que representará la creación del proyecto. Esta estimación será temporal y/o económica si procede (costes de contratación de servicios en la nube, por ejemplo).*
+Según los cálculos iniciales no se estiman ningún tipo de gastos económicos en un principio. Por otro lado, el proyecto se espera terminar en un plazo de 45 días.
