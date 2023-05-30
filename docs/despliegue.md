@@ -23,6 +23,6 @@ Cada instalador o paquete de instalación ha sido diseñado para proporcionar un
 - Configuración y personalización del software según las preferencias del usuario.
 - Finalización de la instalación y disponibilidad inmediata del software para su uso.
 
-Conclusiones:
+**###### Conclusiones:**
 
 La puesta en producción del software ha sido exitosa al proporcionar el instalador adecuado para la plataforma objetivo. Los usuarios finales pueden instalar y configurar el software de forma rápida y sencilla, lo que garantiza su disponibilidad inmediata para su uso. 
