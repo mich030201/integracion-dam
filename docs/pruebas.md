@@ -1,10 +1,10 @@
 # Pruebas
 
-1. Objetivo:
+**1. Objetivo:**
 
 El objetivo de este informe es documentar la detección de fallos cometidos en las etapas anteriores del proyecto y describir los planes de pruebas propuestos a distintos niveles: pruebas unitarias, pruebas de integración y pruebas con usuarios.
 
-2. Detección de fallos:
+**2. Detección de fallos:**
 
 Durante el desarrollo del proyecto, se identificaron los siguientes fallos en las etapas anteriores:
 
@@ -14,6 +14,6 @@ Durante el desarrollo del proyecto, se identificaron los siguientes fallos en la
 
 - **c) Carga de coordenadas de un spot**: En un momento del desarrollo se comprobó que al cargar los datos de un marcador en su correspondiente pantalla las coordenadas aparecían con el textop de null. Esto se debe a que a la hora de crear un marcador no es necesario declarar el atributo correspondiente a las coordenadas, y al mostralo por pantalla aparecia el texto de null. Pero se solucionó comprobando antes de cargar el dato si era nulo.
 
-3. Planes de pruebas:
+**3. Planes de pruebas:**
 
 - **a) Pruebas con usuarios**: Se han llevado ha cabo pruebas con usuarios finales para evaluar la usabilidad, funcionalidad y rendimiento del sistema en un entorno real.Estas pruebas han sido llevadas a cabo por el propio desarrollador de la aplicación. En estas pruebas se comprobaron diferentes funcionalidades de la aplicación y con respecto a los resultados se realizaron las convenientes mejoras. 
