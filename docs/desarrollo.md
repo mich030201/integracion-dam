@@ -15,9 +15,12 @@ A continuación nombraré algunas de las dependencias más importantes que he us
 - cupertino_icons: Es un conjunto de íconos diseñados específicamente para la plataforma iOS. Fue creado por Apple y se utiliza en sus propias aplicaciones y sistemas operativos..
 - flutter_secure_storage: Es un paquete en Flutter que proporciona un mecanismo de almacenamiento seguro de clave-valor para almacenar información sensible, como tokens de acceso, claves de API o credenciales de usuario. Se asegura de que los datos estén encriptados y se almacenen de forma segura en el dispositivo.
 - provider: Es un paquete que facilita la implementación del patrón de diseño de administración de estados en una aplicación Flutter. Proporciona una forma sencilla y eficiente de compartir y actualizar datos entre widgets de manera reactiva.
+- shared_preferences: Es un paquete que permite almacenar y recuperar datos persistentes de manera sencilla. Se utiliza normalmente para guardar información no crítica en la aplicación, como configuraciones de usuario, preferencias o pequeños conjuntos de datos. En este caso se ha empleado para la función del tema oscuro.
+- 
 3. Base de Datos:
 
-[Sistema de Gestión de Base de Datos]: Se utilizó [Sistema de Gestión de Base de Datos] para almacenar y gestionar los datos del proyecto. Referencia: [enlace a la documentación o página oficial].
+Firebase: Se utilizó Firebase] para almacenar y gestionar los datos del proyecto. Referencia: [Documentación de flutter](https://firebase.google.com/docs?hl=es-419).
+
 4. Herramientas de Desarrollo:
 
 [Herramienta 1]: Se utilizó [Herramienta 1] para [explicar el uso específico].
