@@ -4,11 +4,11 @@ El presente informe detalla las tecnologías utilizadas durante el desarrollo de
 
 1. Lenguajes de Programación:
 
-- Dart: Dart es un lenguaje de programación desarrollado por Google que se utiliza principalmente para la creación de aplicaciones móviles, aplicaciones web y servidores. Se utilizó Dart para el desarrollo de completo de aplicación junto con su framework Flutter. Con este lenguaje se ha desarrollado la logica de la aplicación, la gestión de eventos en Flutter y también la interfaz de esta mediante Flutter.
+- **Dart**: Dart es un lenguaje de programación desarrollado por Google que se utiliza principalmente para la creación de aplicaciones móviles, aplicaciones web y servidores. Se utilizó Dart para el desarrollo de completo de aplicación junto con su framework Flutter. Con este lenguaje se ha desarrollado la logica de la aplicación, la gestión de eventos en Flutter y también la interfaz de esta mediante Flutter.
 
 2. Frameworks y Bibliotecas:
 
-- Flutter: Flutter es un framework de código abierto desarrollado por Google que se utiliza para crear aplicaciones móviles nativas de alta calidad en plataformas iOS y Android desde una sola base de código. He usado Flutter por su enfoque en la creación de interfaces de usuario atractivas, con rápido rendimineto y una apariencia nativa en ambas plataformas. En este proyecto he usado Flutter principalmente para desarrollar la interfaz de la aplicación.
+- **Flutter**: Flutter es un framework de código abierto desarrollado por Google que se utiliza para crear aplicaciones móviles nativas de alta calidad en plataformas iOS y Android desde una sola base de código. He usado Flutter por su enfoque en la creación de interfaces de usuario atractivas, con rápido rendimineto y una apariencia nativa en ambas plataformas. En este proyecto he usado Flutter principalmente para desarrollar la interfaz de la aplicación.
 
 A continuación nombraré algunas de las dependencias más importantes que he usadp en el proyecto:
 
@@ -23,18 +23,12 @@ A continuación nombraré algunas de las dependencias más importantes que he us
 
 4. Herramientas de Desarrollo:
 
-[Herramienta 1]: Se utilizó [Herramienta 1] para [explicar el uso específico].
-[Herramienta 2]: Esta herramienta fue empleada para [explicar el uso específico].
-...
+- **Visual Studio Code**: Se utilizó Visual Studio Code como IDE para desarrollar el código del proyecto.
+- **Postman**: Se utilizó Postman para hacer peticiones a la base de datos y comprobar si los datos son correctos.
+
 5. Servicios en la Nube:
 
-[Proveedor de Servicios en la Nube 1]: Se utilizó [Proveedor de Servicios en la Nube 1] para [explicar el uso específico]. Referencia: [enlace a la documentación o página oficial].
-[Proveedor de Servicios en la Nube 2]: Se aprovechó [Proveedor de Servicios en la Nube 2] para [explicar el uso específico]. Referencia: [enlace a la documentación o página oficial].
-...
-6. Otras Tecnologías:
+- **Cloudinary**: Se utilizó Cloudinary para alojar las imágenes de los spots que suben los usuarios. Referencia: [Cloudinary](https://cloudinary.com/).
 
-[Tecnología 1]: Fue utilizada para [explicar el uso específico].
-[Tecnología 2]: Se empleó [Tecnología 2] para [explicar el uso específico].
-...
 ###### Conclusiones:
-Durante el desarrollo del proyecto [Nombre del Proyecto], se utilizaron diversas tecnologías, herramientas, lenguajes y servicios. Estas elecciones tecnológicas permitieron cumplir con los objetivos establecidos y lograr los resultados deseados. El uso de [mencionar tecnologías clave] demostró ser efectivo para [describir los beneficios o ventajas obtenidos]. Además, la combinación de [mencionar tecnologías complementarias] contribuyó a [describir el valor añadido].
+Durante el desarrollo de este proyecto, se utilizaron diversas tecnologías, herramientas, lenguajes y servicios. Estas elecciones tecnológicas permitieron cumplir con los objetivos establecidos y lograr los resultados deseados. El uso de Flutter demostró ser efectivo para que la aplicación fuese atractiva visualmente y rápida. Además, la combinación de Firebase y Cloudinary contribuyó a hacer más fácil el almacenar los datos de la aplicación y las imágenes.
