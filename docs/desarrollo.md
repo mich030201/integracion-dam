@@ -30,5 +30,5 @@ A continuación nombraré algunas de las dependencias más importantes que he us
 
 - **Cloudinary**: Se utilizó Cloudinary para alojar las imágenes de los spots que suben los usuarios. Referencia: [Cloudinary](https://cloudinary.com/).
 
-**###### Conclusiones:**
+###### Conclusiones:
 Durante el desarrollo de este proyecto, se utilizaron diversas tecnologías, herramientas, lenguajes y servicios. Estas elecciones tecnológicas permitieron cumplir con los objetivos establecidos y lograr los resultados deseados. El uso de Flutter demostró ser efectivo para que la aplicación fuese atractiva visualmente y rápida. Además, la combinación de Firebase y Cloudinary contribuyó a hacer más fácil el almacenar los datos de la aplicación y las imágenes.
