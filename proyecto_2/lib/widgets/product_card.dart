@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
+
 import 'package:productos_app/models/models.dart';
 
-
+/// Clase que define el componente donde irán los datos de los marcadores cargados de
+/// de la base de datos y que se mostrarán en la pantalla principal.
 class ProductCard extends StatelessWidget {
 
+  // Atributo
   final Marcador marcador;
 
+  // Constructor
   const ProductCard({
     super.key, 
     required this.marcador
@@ -26,9 +30,9 @@ class ProductCard extends StatelessWidget {
           alignment: Alignment.bottomLeft,
 
           children: [
-            _BackgroundImage(marcador.picture),
+            _BackgroundImage(marcador.picture), // Isntancia a clase privada
 
-            _ProductDetails(title: marcador.name, subTitle: marcador.adress),
+            _ProductDetails(title: marcador.name, subTitle: marcador.adress), // Isntancia a clase privada
           ],
         ),
       ),
@@ -49,10 +53,13 @@ class ProductCard extends StatelessWidget {
   );
 }
 
+// Clase privada que construye la imagen de fondo que se va a ver en la carta
 class _BackgroundImage extends StatelessWidget {
 
+  // Propiedad
   final String? url;
 
+  // Constructor
   const _BackgroundImage( 
     this.url
   );
@@ -80,9 +87,10 @@ class _BackgroundImage extends StatelessWidget {
   }
 }
 
-
+// Componente donde se mostrarán algunos detalles del marcador
 class _ProductDetails extends StatelessWidget {
 
+  // Propiedades
   final String title;
   final String subTitle;
 

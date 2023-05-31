@@ -16,10 +16,10 @@ class ProductScreenVisualizer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    final productSevice = Provider.of<ProductsService>(context);
+    final productSevice = Provider.of<MarkersService>(context);
 
     return ChangeNotifierProvider(
-      create: ( _ ) => MarcadorFormProvider(productSevice.selectedProduct),
+      create: ( _ ) => MarcadorFormProvider(productSevice.selectedMarker),
       child: _ProductScreenBody(productSevice: productSevice),
     );
 
@@ -34,7 +34,7 @@ class _ProductScreenBody extends StatelessWidget {
     required this.productSevice,
   });
 
-  final ProductsService productSevice;
+  final MarkersService productSevice;
 
   @override
   Widget build(BuildContext context) {
@@ -51,7 +51,7 @@ class _ProductScreenBody extends StatelessWidget {
 
             Stack(
               children: [
-                ProductImage(url: productSevice.selectedProduct.picture),
+                ProductImage(url: productSevice.selectedMarker.picture),
 
                 Positioned(
                   top: 60,

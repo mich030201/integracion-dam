@@ -18,10 +18,10 @@ class ProductScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    final productSevice = Provider.of<ProductsService>(context);
+    final productSevice = Provider.of<MarkersService>(context);
 
     return ChangeNotifierProvider(
-      create: ( _ ) => MarcadorFormProvider(productSevice.selectedProduct),
+      create: ( _ ) => MarcadorFormProvider(productSevice.selectedMarker),
       child: _ProductScreenBody(productSevice: productSevice),
     );
 
@@ -36,7 +36,7 @@ class _ProductScreenBody extends StatelessWidget {
     required this.productSevice,
   });
 
-  final ProductsService productSevice;
+  final MarkersService productSevice;
 
   @override
   Widget build(BuildContext context) {
@@ -53,7 +53,7 @@ class _ProductScreenBody extends StatelessWidget {
 
             Stack(
               children: [
-                ProductImage(url: productSevice.selectedProduct.picture),
+                ProductImage(url: productSevice.selectedMarker.picture),
 
                 Positioned(
                   top: 60,
@@ -82,7 +82,7 @@ class _ProductScreenBody extends StatelessWidget {
 
                       if(pickedFile == null) return;
 
-                      productSevice.updateSelectedProductImage(pickedFile.path);
+                      productSevice.updateSelectedMarkerImage(pickedFile.path);
                       
                     },
                   )
@@ -129,7 +129,7 @@ class _ProductScreenBody extends StatelessWidget {
                 productForm.marcador.picture = imageUrl;
               }
           
-              await productSevice.saveOrCreateProduct(productForm.marcador); //Guarda la info en la BD
+              await productSevice.saveOrCreateMarker(productForm.marcador); //Guarda la info en la BD
 
               // Navigator.pushReplacementNamed(context, 'home');
 
@@ -157,7 +157,7 @@ class _ProductScreenBody extends StatelessWidget {
                 productForm.marcador.picture = imageUrl;
               }
           
-              await productSevice.deleteProduct(productForm.marcador); //Guarda la info en la BD
+              await productSevice.deleteMarker(productForm.marcador); //Guarda la info en la BD
 
               // Navigator.pushReplacementNamed(context, 'home');
 

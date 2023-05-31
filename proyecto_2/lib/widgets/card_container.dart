@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 
+/// Clase que define el contenedor donde irán los MarkerCard en la pantalla principal.
 class CardContainer extends StatelessWidget {
- 
+  
+  // Atributo
   final Widget child;
 
+  // Cosntructor
   const CardContainer({
     super.key, 
     required this.child
@@ -15,13 +18,14 @@ class CardContainer extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 30),
       child: Container(
         width: double.infinity,
-        padding: EdgeInsets.all(20),
+        padding: const EdgeInsets.all(20),
         decoration: _createCardShape(),
-        child: this.child,
+        child: child,
       ),
     );
   }
 
+  // Método privado que define el estilo del componente
   BoxDecoration _createCardShape() => BoxDecoration(
     color: Colors.white,
     borderRadius: BorderRadius.circular(25),

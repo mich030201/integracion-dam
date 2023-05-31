@@ -1,43 +1,43 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+
 import 'package:productos_app/providers/login_form_provider.dart';
 import 'package:productos_app/providers/theme_provider.dart';
 
 import 'package:productos_app/screens/screens.dart';
 import 'package:productos_app/services/services.dart';
-import 'package:productos_app/share_preferences/preferencias.dart';
 
-import 'package:provider/provider.dart';
+import 'package:productos_app/share_preferences/preferencias.dart';
 
 
 void main() async {
 
-  WidgetsFlutterBinding.ensureInitialized();
+  WidgetsFlutterBinding.ensureInitialized(); // Se asegura que de Flutter esté inicializado
 
-  await Preferences.init();
+  await Preferences.init(); // Inicializa las preferencias del usuario
 
-  runApp(const AppState());
+  runApp(const AppState()); // Ejecuta la aplicación
 
 } 
 
 class AppState extends StatelessWidget {
   const AppState({super.key});
 
+  // Proveedores
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
-        ChangeNotifierProvider(create: ( _ ) => ThemeProvider(isDarkMode: Preferences.IsDarkMode)),
-        ChangeNotifierProvider(create: ( _ ) => ProductsService()),
-        ChangeNotifierProvider(create: ( _ ) => AuthService()),
-        ChangeNotifierProvider(create: ( _ ) => LoginFormProvider()),
+        ChangeNotifierProvider(create: ( _ ) => ThemeProvider(isDarkMode: Preferences.isDarkMode)), // Maneja el tema de la aplicación
+        ChangeNotifierProvider(create: ( _ ) => MarkersService()), // Maneja la lógica de los marcadores
+        ChangeNotifierProvider(create: ( _ ) => AuthService()), // Maneja la lógica y estado de autentificación
+        ChangeNotifierProvider(create: ( _ ) => LoginFormProvider()), // Maneja el estado de los formularios de inicio de sesión
       ],
 
       child: const MyApp(),
     );
   }
 }
-
-
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -48,8 +48,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Productos App',
 
-      initialRoute: 'login',
-      routes:  {
+      initialRoute: 'login', // Ruta en la que inicia la aplicación
+      routes:  { // Rutas de las diferentes pantallas
         'checking': ( _ ) => const CheckScreen(),
 
         'login': ( _ ) => LoginScreen(),
@@ -63,23 +63,9 @@ class MyApp extends StatelessWidget {
         'settings': ( _ ) => const SettingsScreen(),
       },
 
-      scaffoldMessengerKey: NotificationsService.messengerKey,
+      scaffoldMessengerKey: NotificationsService.messengerKey, // Establece la clave global para el servicio de mensajes rápidos
 
-      // theme: ThemeData.light().copyWith(
-      //   scaffoldBackgroundColor: Colors.grey[300],
-
-      //   appBarTheme: const AppBarTheme(
-      //     elevation: 0,
-      //     color: Colors.indigo
-      //   ),
-
-      //   floatingActionButtonTheme: const FloatingActionButtonThemeData(
-      //     backgroundColor: Colors.indigo,
-      //     elevation: 0
-      //   )
-      // ),
-
-      theme: Provider.of<ThemeProvider>(context).currentTheme,
+      theme: Provider.of<ThemeProvider>(context).currentTheme, // Utiliza el tema proporcionado por ThemeProvider
       
     );
   }

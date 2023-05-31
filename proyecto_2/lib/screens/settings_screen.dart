@@ -39,10 +39,10 @@ class _SettingsScreenState extends State<SettingsScreen> {
               const Divider(),
 
               SwitchListTile.adaptive(
-                value: Preferences.IsDarkMode, 
+                value: Preferences.isDarkMode, 
                 title: const Text('Modo oscuro'),
                 onChanged: (value) {
-                  Preferences.IsDarkMode = value;
+                  Preferences.isDarkMode = value;
                   final themeProvider = Provider.of<ThemeProvider>(context, listen: false);
 
                   value ? themeProvider.setDarkMode() : themeProvider.setLightMode();

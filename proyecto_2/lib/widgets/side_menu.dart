@@ -1,19 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-
-// import 'package:preferences_user/screens/screens.dart';
-// import 'package:preferences_user/services/services.dart';
 import 'package:provider/provider.dart';
+import 'package:flutter/services.dart';
 
 import '../screens/screens.dart';
 import '../services/services.dart';
 
+/// Clase que sirve para definir el componente del menú lateral.
 class SideMenu extends StatelessWidget {
+
+  // Constructor
   const SideMenu({super.key});
 
   @override
   Widget build(BuildContext context) {
 
+    // Variable para poder cerrar la sesión
     final authService = Provider.of<AuthService>(context, listen: false);
 
     return Drawer(
@@ -21,8 +22,9 @@ class SideMenu extends StatelessWidget {
         padding: EdgeInsets.zero,
         children: [
 
-          _DrawerHeader(),
+          const _DrawerHeader(), // Instancia de la cabecera
 
+          // Opción 1: Te lleva a la pantalla donde se muestran los marcadores
           ListTile(
             leading: const Icon(Icons.home_rounded),
             title: const Text('Mapa'),
@@ -32,6 +34,7 @@ class SideMenu extends StatelessWidget {
             },
           ),
 
+          // Opción 2: Te lleva a la pantalla de los ajustes
           ListTile(
             leading: const Icon(Icons.settings_rounded),
             title: const Text('Ajustes'),
@@ -41,8 +44,9 @@ class SideMenu extends StatelessWidget {
             },
           ),
 
-          const Divider(),
+          const Divider(), // Divisor para aumentar el espacio entre dos componentes
 
+          // Opción 3: Cierra la sesión y sale de la apliación
           ListTile(
             leading: const Icon(Icons.logout_rounded),
             title: const Text('Cerrar sesión'),
@@ -58,8 +62,7 @@ class SideMenu extends StatelessWidget {
   }
 }
 
-
-
+// Clase privada que sirve para crear la imagen de cabecera del SideMenu
 class _DrawerHeader extends StatelessWidget {
   const _DrawerHeader({
     super.key,
@@ -68,13 +71,14 @@ class _DrawerHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DrawerHeader(
-      child: Container(),
       decoration: const BoxDecoration(
         image: DecorationImage(
           image: AssetImage('assets/menu-img.jpg'),
           fit: BoxFit.cover
         )
       ),
+
+      child: Container(),
     );
   }
 }

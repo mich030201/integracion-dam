@@ -17,7 +17,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    final productsService = Provider.of<ProductsService>(context);
+    final productsService = Provider.of<MarkersService>(context);
     final loginForm = Provider.of<LoginFormProvider>(context); 
 
     final String emailInUsing = loginForm.email;
@@ -35,15 +35,15 @@ class HomeScreen extends StatelessWidget {
       drawer: const SideMenu(),
 
       body: ListView.builder(
-        itemCount: productsService.products.length,
+        itemCount: productsService.markers.length,
 
         itemBuilder: (BuildContext context, int index) => GestureDetector( //Con el Gesture detector detecta que pulsa en un sitio y podemos redirigirlo a otro Screen
           
           onTap:() {
             
-            productsService.selectedProduct = productsService.products[index].copy();
+            productsService.selectedMarker = productsService.markers[index].copy();
 
-            if(loginForm.email == productsService.selectedProduct.creatorId) {
+            if(loginForm.email == productsService.selectedMarker.creatorId) {
               Navigator.pushNamed(context, 'product');
             } else {
               Navigator.pushNamed(context, 'visualizer');
@@ -51,7 +51,7 @@ class HomeScreen extends StatelessWidget {
           },
 
           child: ProductCard(
-            marcador: productsService.products[index],
+            marcador: productsService.markers[index],
           )
         ),
       ),
@@ -62,7 +62,7 @@ class HomeScreen extends StatelessWidget {
         backgroundColor: Colors.deepPurple,
 
         onPressed: () {
-          productsService.selectedProduct = Marcador(
+          productsService.selectedMarker = Marcador(
             creatorId: emailInUsing,  
             name: 'Spot nuevo',
             description: 'Descripción del lugar',
