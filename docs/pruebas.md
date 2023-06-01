@@ -14,6 +14,8 @@ Durante el desarrollo del proyecto, se identificaron los siguientes fallos en la
 
 - **c) Carga de coordenadas de un spot**: En un momento del desarrollo se comprobó que al cargar los datos de un marcador en su correspondiente pantalla las coordenadas aparecían con el textop de null. Esto se debe a que a la hora de crear un marcador no es necesario declarar el atributo correspondiente a las coordenadas, y al mostralo por pantalla aparecia el texto de null. Pero se solucionó comprobando antes de cargar el dato si era nulo.
 
+- **d) Problema con el mapa de la pantalla principal**: Durante el desarrollo del proyecto hubo un erro que no se pudo resolver y que me obligó a modificar el aspecto y funcionamiento de la aplicación. Este error ocurría en la pantalla princiapl con el mapa, ya que este contaba con un atributo que recibe una colección de objetos tipo Marker, pero al pasarle una colección de objetos Marker con los datos que tenía guardados en la base de datos no me los cargaba. Por ello me vi obligado a cambiar el mapa por unas tarjetas que contuviesen esos datos: 
+
 **3. Planes de pruebas:**
 
 - **a) Pruebas con usuarios**: Se han llevado ha cabo pruebas con usuarios finales para evaluar la usabilidad, funcionalidad y rendimiento del sistema en un entorno real.Estas pruebas han sido llevadas a cabo por el propio desarrollador de la aplicación. En estas pruebas se comprobaron diferentes funcionalidades de la aplicación y con respecto a los resultados se realizaron las convenientes mejoras. 
